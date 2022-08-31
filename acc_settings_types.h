@@ -3,40 +3,40 @@
 // course requirements at degree granting institutions only.  Not for
 // government, commercial, or other organizational use.
 //
-// File: acc_accel_types.h
+// File: acc_settings_types.h
 //
-// Code generated for Simulink model 'acc_accel'.
+// Code generated for Simulink model 'acc_settings'.
 //
-// Model version                  : 3.239
+// Model version                  : 3.241
 // Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
-// C/C++ source code generated on : Wed Aug 24 17:39:00 2022
+// C/C++ source code generated on : Wed Aug 31 15:13:51 2022
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: Generic->Unspecified (assume 32-bit Generic)
 // Code generation objectives: Unspecified
 // Validation result: Not run
 //
-#ifndef RTW_HEADER_acc_accel_types_h_
-#define RTW_HEADER_acc_accel_types_h_
+#ifndef RTW_HEADER_acc_settings_types_h_
+#define RTW_HEADER_acc_settings_types_h_
 #include "rtwtypes.h"
 
 // Model Code Variants
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_acc_accel_std_msgs_Int32_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_acc_accel_std_msgs_Int32_
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_acc_settings_std_msgs_Int32_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_acc_settings_std_msgs_Int32_
 
 // MsgType=std_msgs/Int32
-struct SL_Bus_acc_accel_std_msgs_Int32
+struct SL_Bus_acc_settings_std_msgs_Int32
 {
   int32_T Data;
 };
 
 #endif
 
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_acc_accel_geometry_msgs_Vector3_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_acc_accel_geometry_msgs_Vector3_
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_acc_settings_geometry_msgs_Vector3_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_acc_settings_geometry_msgs_Vector3_
 
 // MsgType=geometry_msgs/Vector3
-struct SL_Bus_acc_accel_geometry_msgs_Vector3
+struct SL_Bus_acc_settings_geometry_msgs_Vector3
 {
   real_T X;
   real_T Y;
@@ -45,17 +45,17 @@ struct SL_Bus_acc_accel_geometry_msgs_Vector3
 
 #endif
 
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_acc_accel_geometry_msgs_Twist_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_acc_accel_geometry_msgs_Twist_
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_acc_settings_geometry_msgs_Twist_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_acc_settings_geometry_msgs_Twist_
 
 // MsgType=geometry_msgs/Twist
-struct SL_Bus_acc_accel_geometry_msgs_Twist
+struct SL_Bus_acc_settings_geometry_msgs_Twist
 {
   // MsgType=geometry_msgs/Vector3
-  SL_Bus_acc_accel_geometry_msgs_Vector3 Linear;
+  SL_Bus_acc_settings_geometry_msgs_Vector3 Linear;
 
   // MsgType=geometry_msgs/Vector3
-  SL_Bus_acc_accel_geometry_msgs_Vector3 Angular;
+  SL_Bus_acc_settings_geometry_msgs_Vector3 Angular;
 };
 
 #endif
@@ -108,12 +108,12 @@ struct ros_slroscpp_internal_block_S_T
 #endif                                // struct_ros_slroscpp_internal_block_S_T
 
 // Parameters (default storage)
-typedef struct P_acc_accel_T_ P_acc_accel_T;
+typedef struct P_acc_settings_T_ P_acc_settings_T;
 
 // Forward declaration for rtModel
-typedef struct tag_RTM_acc_accel_T RT_MODEL_acc_accel_T;
+typedef struct tag_RTM_acc_settings_T RT_MODEL_acc_settings_T;
 
-#endif                                 // RTW_HEADER_acc_accel_types_h_
+#endif                                 // RTW_HEADER_acc_settings_types_h_
 
 //
 // File trailer for generated code.

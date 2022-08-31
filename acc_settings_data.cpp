@@ -3,24 +3,24 @@
 // course requirements at degree granting institutions only.  Not for
 // government, commercial, or other organizational use.
 //
-// File: acc_accel_data.cpp
+// File: acc_settings_data.cpp
 //
-// Code generated for Simulink model 'acc_accel'.
+// Code generated for Simulink model 'acc_settings'.
 //
-// Model version                  : 3.239
+// Model version                  : 3.241
 // Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
-// C/C++ source code generated on : Wed Aug 24 17:39:00 2022
+// C/C++ source code generated on : Wed Aug 31 15:13:51 2022
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: Generic->Unspecified (assume 32-bit Generic)
 // Code generation objectives: Unspecified
 // Validation result: Not run
 //
-#include "acc_accel.h"
-#include "acc_accel_private.h"
+#include "acc_settings.h"
+#include "acc_settings_private.h"
 
 // Block parameters (default storage)
-P_acc_accel_T acc_accel_P = {
+P_acc_settings_T acc_settings_P = {
   // Computed Parameter: Out1_Y0
   //  Referenced by: '<S9>/Out1'
 

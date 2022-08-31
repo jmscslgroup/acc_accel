@@ -1,9 +1,9 @@
 #include "slros_busmsg_conversion.h"
 
 
-// Conversions between SL_Bus_acc_accel_geometry_msgs_Twist and geometry_msgs::Twist
+// Conversions between SL_Bus_acc_settings_geometry_msgs_Twist and geometry_msgs::Twist
 
-void convertFromBus(geometry_msgs::Twist* msgPtr, SL_Bus_acc_accel_geometry_msgs_Twist const* busPtr)
+void convertFromBus(geometry_msgs::Twist* msgPtr, SL_Bus_acc_settings_geometry_msgs_Twist const* busPtr)
 {
   const std::string rosMessageType("geometry_msgs/Twist");
 
@@ -11,7 +11,7 @@ void convertFromBus(geometry_msgs::Twist* msgPtr, SL_Bus_acc_accel_geometry_msgs
   convertFromBus(&msgPtr->linear, &busPtr->Linear);
 }
 
-void convertToBus(SL_Bus_acc_accel_geometry_msgs_Twist* busPtr, geometry_msgs::Twist const* msgPtr)
+void convertToBus(SL_Bus_acc_settings_geometry_msgs_Twist* busPtr, geometry_msgs::Twist const* msgPtr)
 {
   const std::string rosMessageType("geometry_msgs/Twist");
 
@@ -20,9 +20,9 @@ void convertToBus(SL_Bus_acc_accel_geometry_msgs_Twist* busPtr, geometry_msgs::T
 }
 
 
-// Conversions between SL_Bus_acc_accel_geometry_msgs_Vector3 and geometry_msgs::Vector3
+// Conversions between SL_Bus_acc_settings_geometry_msgs_Vector3 and geometry_msgs::Vector3
 
-void convertFromBus(geometry_msgs::Vector3* msgPtr, SL_Bus_acc_accel_geometry_msgs_Vector3 const* busPtr)
+void convertFromBus(geometry_msgs::Vector3* msgPtr, SL_Bus_acc_settings_geometry_msgs_Vector3 const* busPtr)
 {
   const std::string rosMessageType("geometry_msgs/Vector3");
 
@@ -31,7 +31,7 @@ void convertFromBus(geometry_msgs::Vector3* msgPtr, SL_Bus_acc_accel_geometry_ms
   msgPtr->z =  busPtr->Z;
 }
 
-void convertToBus(SL_Bus_acc_accel_geometry_msgs_Vector3* busPtr, geometry_msgs::Vector3 const* msgPtr)
+void convertToBus(SL_Bus_acc_settings_geometry_msgs_Vector3* busPtr, geometry_msgs::Vector3 const* msgPtr)
 {
   const std::string rosMessageType("geometry_msgs/Vector3");
 
@@ -41,16 +41,16 @@ void convertToBus(SL_Bus_acc_accel_geometry_msgs_Vector3* busPtr, geometry_msgs:
 }
 
 
-// Conversions between SL_Bus_acc_accel_std_msgs_Int32 and std_msgs::Int32
+// Conversions between SL_Bus_acc_settings_std_msgs_Int32 and std_msgs::Int32
 
-void convertFromBus(std_msgs::Int32* msgPtr, SL_Bus_acc_accel_std_msgs_Int32 const* busPtr)
+void convertFromBus(std_msgs::Int32* msgPtr, SL_Bus_acc_settings_std_msgs_Int32 const* busPtr)
 {
   const std::string rosMessageType("std_msgs/Int32");
 
   msgPtr->data =  busPtr->Data;
 }
 
-void convertToBus(SL_Bus_acc_accel_std_msgs_Int32* busPtr, std_msgs::Int32 const* msgPtr)
+void convertToBus(SL_Bus_acc_settings_std_msgs_Int32* busPtr, std_msgs::Int32 const* msgPtr)
 {
   const std::string rosMessageType("std_msgs/Int32");
 

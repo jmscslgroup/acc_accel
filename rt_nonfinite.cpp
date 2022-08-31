@@ -5,11 +5,11 @@
 //
 // File: rt_nonfinite.cpp
 //
-// Code generated for Simulink model 'acc_accel'.
+// Code generated for Simulink model 'acc_settings'.
 //
-// Model version                  : 3.239
+// Model version                  : 3.241
 // Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
-// C/C++ source code generated on : Wed Aug 24 17:39:00 2022
+// C/C++ source code generated on : Wed Aug 31 15:13:51 2022
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: Generic->Unspecified (assume 32-bit Generic)

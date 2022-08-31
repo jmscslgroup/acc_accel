@@ -1,5 +1,5 @@
 // Copyright 2019-2021 The MathWorks, Inc.
-// Generated 24-Aug-2022 17:39:03
+// Generated 31-Aug-2022 15:13:57
 
 #ifdef _MSC_VER
 
@@ -23,7 +23,7 @@
 
 #endif                                 //_MSC_VER
 
-#include "acc_accel.h"
+#include "acc_settings.h"
 #include "rosnodeinterface.h"
 #include <thread>
 #include <chrono>
@@ -52,11 +52,11 @@ namespace ros
     {
       try {
         mNode = std::make_shared<ros::NodeHandle>();
-        ROS_INFO("** Starting the model \"acc_accel\" **\n");
+        ROS_INFO("** Starting the model \"acc_settings\" **\n");
 
         // initialize the model which will initialize the publishers and subscribers
-        rtmSetErrorStatus(acc_accel_M, (NULL));
-        acc_accel_initialize();
+        rtmSetErrorStatus(acc_settings_M, (NULL));
+        acc_settings_initialize();
 
         // create the threads for the rates in the Model
         mBaseRateThread = std::make_shared<std::thread>(&NodeInterface::
@@ -83,13 +83,13 @@ namespace ros
 
 #ifndef rtmGetStopRequested
 
-      return (!(rtmGetErrorStatus(acc_accel_M)
+      return (!(rtmGetErrorStatus(acc_settings_M)
                 == (NULL)));
 
 #else
 
-      return (!(rtmGetErrorStatus(acc_accel_M)
-                == (NULL)) || rtmGetStopRequested(acc_accel_M));
+      return (!(rtmGetErrorStatus(acc_settings_M)
+                == (NULL)) || rtmGetStopRequested(acc_settings_M));
 
 #endif
 
@@ -107,7 +107,7 @@ namespace ros
           mSchedulerThread.reset();
         }
 
-        acc_accel_terminate();
+        acc_settings_terminate();
         mNode.reset();
       }
     }
@@ -127,7 +127,7 @@ namespace ros
     // Base-rate task
     void NodeInterface::baseRateTask(void)
     {
-      mRunModel = (rtmGetErrorStatus(acc_accel_M) ==
+      mRunModel = (rtmGetErrorStatus(acc_settings_M) ==
                    (NULL));
       while (mRunModel) {
         mBaseRateSem.wait();
@@ -140,7 +140,7 @@ namespace ros
 
         if (!mRunModel)
           break;
-        acc_accel_step();
+        acc_settings_step();
         mRunModel = !NodeInterface::getStopRequestedFlag();
       }
 

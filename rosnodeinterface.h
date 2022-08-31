@@ -1,5 +1,5 @@
 // Copyright 2019-2020 The MathWorks, Inc.
-// Generated 24-Aug-2022 17:39:03
+// Generated 31-Aug-2022 15:13:56
 
 #ifndef _ROS_MATLAB_NODEINTERFACE_
 #define _ROS_MATLAB_NODEINTERFACE_
@@ -23,8 +23,8 @@
 
 #endif                                 //_MSC_VER
 
-#include "acc_accel.h"
-#include "acc_accel_types.h"
+#include "acc_settings.h"
+#include "acc_settings_types.h"
 #include <thread>
 #include <atomic>
 #include <chrono>

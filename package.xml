@@ -1,8 +1,8 @@
 <package>
-  <name>acc_accel</name>
+  <name>acc_settings</name>
   <version>1.0.0</version>
   <description>
-  This package is generated from acc_accel Simulink model.
+  This package is generated from acc_settings Simulink model.
   </description>
   <maintainer email="rahulbhadani@email.arizona.edu">Rahul Bhadani</maintainer>
   <license>BSD</license>
